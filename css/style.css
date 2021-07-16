@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap');
 
+:root {
+  --text-primary: #00ed82;
+  --text-light: #f1f1f1;
+  --bg-light: #f1f1f1;
+}
+
 *,
 *::before,
 *::after {
@@ -12,7 +18,111 @@ html,
 body {
   background-color: #000;
   font-family: 'Rubik', sans-serif;
-  color: #fff;
+  color: var(--text-light);
   line-height: 1.7;
   overflow-x: hidden;
+}
+
+a {
+  color: var(--text-light);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ccc;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+}
+
+h4 {
+  font-style: 0.8125rem;
+  color: var(--text-primary);
+  text-transform: uppercase;
+}
+
+.btn {
+  display: inline-block;
+  padding: 20px 32px;
+  min-width: 135px;
+  background-color: var(--bg-light);
+  border: none;
+  border-radius: 5px;
+  font-style: 0.9375rem;
+  font-weight: 600;
+  color: #333;
+  text-transform: uppercase;
+  line-height: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.btn-cta:hover {
+  opacity: 0.8;
+}
+
+.legal-text {
+  margin-top: 20px;
+  font-size: 0.75rem;
+  color: #ccc;
+  opacity: 0.8;
+}
+
+.header {
+  height: 530px;
+  background: url('../img/header.jpg') no-repeat center center / cover;
+}
+
+.header nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 40px;
+}
+
+.header nav .login-btn {
+  background: none;
+  border: none;
+  font-weight: bold;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.header .logo {
+  margin: 20px 0;
+  width: 270px;
+}
+
+.header .header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.header .header-text-1 {
+  font-size: 1.375rem;
+  font-weight: bold;
+}
+
+.header .header-text-2 {
+  margin: 25px 0;
+  font-size: 1.125rem;
+}
+
+@media (max-width: 768px) {
+  .header .logo {
+    width: 200px;
+  }
+
+  .header .header-content {
+    padding: 0 20px;
+    text-align: center;
+  }
 }
