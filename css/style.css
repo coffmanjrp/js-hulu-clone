@@ -112,6 +112,13 @@ h4 {
   font-size: 1.5rem;
 }
 
+.divider {
+  margin: 30px 0;
+  width: 100%;
+  height: 3px;
+  border-top: 1px solid #ccc;
+}
+
 /* Header */
 
 .header {
@@ -323,6 +330,40 @@ h4 {
   width: 40px;
 }
 
+/* Footer */
+
+.footer {
+  background-color: #ebedf2;
+  color: #333;
+}
+
+.footer a {
+  color: #333;
+}
+
+.footer-container {
+  margin: auto;
+  padding: 40px;
+  max-width: 1100px;
+}
+
+.footer-lists {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-lists .list-head {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.social-icons img {
+  margin-right: 25px;
+  width: 25px;
+  height: 25px;
+}
+
 @media (max-width: 1100px) {
   .categories .covers {
     grid-template-columns: repeat(2, 1fr);
@@ -390,5 +431,9 @@ h4 {
     left: 30px;
     margin-top: 60px;
     max-width: 370px;
+  }
+
+  .footer-lists {
+    margin-bottom: 1rem;
   }
 }
